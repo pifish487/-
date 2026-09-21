@@ -24,29 +24,3 @@
 4. 对长期未放行的路线增加等待时长权重，避免饥饿。
 
 这不是道路工程的最终配时方案；实际部署还应接入检测器、行人相位、救护车优先及完整的安全审查。
-
-## 运行
-
-无需安装任何软件：双击打开 `index.html`，或将整个目录部署到 GitHub Pages。
-
-在页面中可点击路线按钮增加车辆，或打开“自动来车”。画面会显示当前信号状态、绿灯路线、路线队列与控制日志。
-
-## GitHub 提交
-
-```powershell
-git init
-git add .
-git commit -m "完成五岔路口交通管理系统"
-git branch -M main
-git remote add origin https://github.com/你的用户名/five-way-traffic-control.git
-git push -u origin main
-```
-
-创建仓库时选择 Public，且不要勾选初始化 README（本项目已有 README）。提交后，将仓库链接粘贴到智慧树。
-
-## 文件说明
-
-- `index.html`：可运行的交互演示页面
-- `app.js`：路线、冲突检测、相位选择和仿真逻辑
-- `style.css`：界面样式
-- `REPORT.md`：汇报视频可直接照读的讲稿与演示流程
